@@ -41,7 +41,13 @@ cd public-service
 ```
 
 
-3. Run docker-compose to start development environment
+3. Install dependencies
+
+```sh
+npm install
+```
+
+4. Run docker-compose to start development environment
 
 ```sh
 docker-compose up
