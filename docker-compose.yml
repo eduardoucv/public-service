@@ -1,0 +1,13 @@
+services:
+    api:
+        build: .
+        container_name: public-service
+        environment:
+            SUBSCRIPTION_SERVICE_URL: http://subscription-service:3001/subscriptions
+        ports:
+            - "3000:3000"
+        networks:
+            - subscription_system
+networks:
+    subscription_system:
+        name: subscription_system
